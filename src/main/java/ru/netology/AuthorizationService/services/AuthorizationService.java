@@ -1,16 +1,20 @@
-package ru.netology.AuthorizationService;
+package ru.netology.AuthorizationService.services;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import ru.netology.AuthorizationService.exception.InvalidCredentials;
+import ru.netology.AuthorizationService.exception.UnauthorizedUser;
+import ru.netology.AuthorizationService.model.Authorities;
+import ru.netology.AuthorizationService.repository.UserRepository;
 
 import java.util.List;
 
 @Service
 @AllArgsConstructor
 public class AuthorizationService {
-    UserRepository userRepository;
+   private UserRepository userRepository;
 
-    List<Authorities> getAuthorities(String user, String password) {
+    public List<Authorities> getAuthorities(String user, String password) {
         if (isEmpty(user) || isEmpty(password)) {
             throw new InvalidCredentials("User name or password is empty");
         }

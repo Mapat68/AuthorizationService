@@ -1,0 +1,22 @@
+server {
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+        
+            location /signin {
+            root  /;
+            index  signin.html;
+          }
+
+        location / {
+           proxy_pass http://localhost:8080;           
+       }
+
+
+
+
+место нахождения файла signin.html
+C:\signin

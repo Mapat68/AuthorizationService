@@ -1,4 +1,4 @@
-package ru.netology.AuthorizationService;
+package ru.netology.AuthorizationService.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

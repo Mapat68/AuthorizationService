@@ -1,6 +1,7 @@
-package ru.netology.AuthorizationService;
+package ru.netology.AuthorizationService.repository;
 
 import org.springframework.stereotype.Repository;
+import ru.netology.AuthorizationService.model.Authorities;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package ru.netology.AuthorizationService;
+package ru.netology.AuthorizationService.model;
 
 public enum Authorities {
     READ, WRITE, DELETE
