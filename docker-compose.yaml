@@ -1,7 +1,7 @@
-version: '1'
+version: '3'
 services:
 AuthorizationServiceContainer:
-image: AuthorizationServiceContainer
-build: ./
-ports:
-  - "8085:8080"
+    image: 'AuthorizationServiceContainer'
+    build: ./
+    ports:
+      - "8085:8080"
